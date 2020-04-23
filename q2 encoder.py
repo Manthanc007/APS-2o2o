@@ -1,0 +1,17 @@
+t=int(input())
+while(t>0):
+    t=t-1
+    n,m=map(int,input().split())
+    h=list(map(int,input().split()))
+    h.reverse() 
+    c=list(map(int,input().split()))
+    c.reverse()
+    color=set() 
+    max=0
+    i=n-1
+    while(i>0):
+        if(h[i]>max):
+            max=h[i]
+            color.add(c[i])
+        i=i-1
+    print(len(color))

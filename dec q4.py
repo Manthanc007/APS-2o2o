@@ -1,0 +1,21 @@
+T=int(input())
+while(T>0):
+    T=T-1
+    i=0
+    j=0
+    k=0
+    l=[]
+    N=int(input())
+    while(N>0):
+        N=N-1
+        i=i+1
+        j=j+1
+        k=k+1
+        print(1,i,j,k,flush=True)
+        r=int(input())
+        l.append(r)
+  
+    print(2,*l,flush=True)
+    s=int(input())
+    if(s==-1):
+        break
